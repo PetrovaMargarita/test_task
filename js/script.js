@@ -213,7 +213,9 @@ function Photofoot() {
   setTimeout(() => {
     addArray();
     process = true;
-  }, 8500);
+  }, 3000);
+  scrollDown();
+
 }
 
 
@@ -317,6 +319,7 @@ $.validator.addMethod('regexp', function (value, element, params) {
 });
 //регулярное выражение для номера телефона
 let regPhone = /^[+]{0,1}[-\s\./0-9]{12}$/g;
+
 //текст сообщения
 const error = {
   required: 'Поле не заполнено',
