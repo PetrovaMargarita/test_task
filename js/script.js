@@ -320,6 +320,10 @@ $.validator.addMethod('regexp', function (value, element, params) {
 //регулярное выражение для номера телефона
 let regPhone = /^[+]{0,1}[-\s\./0-9]{12}$/g;
 
+$(document).ready(function () {
+  $("#floatingPhone").inputmask("+380999999999");
+});
+
 //текст сообщения
 const error = {
   required: 'Поле не заполнено',
